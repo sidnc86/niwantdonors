@@ -1,0 +1,33 @@
+<h1>Donar List</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Pin Code</th>
+    <th>Mobile</th>
+    <th>Landline</th>
+    <th>Pan Number</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @donars.each do |donar| %>
+  <tr>
+    <td><%= donar.title %></td>
+     <td><%= donar.name %></td>
+     <td><%= donar.address_line_1 %></td>
+     <td><%= donar.pin_code %></td>
+     <td><%= donar.mobile %></td>
+     <td><%= donar.landline %></td>
+     <td><%= donar.pan_number %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Donar', new_donar_path %>

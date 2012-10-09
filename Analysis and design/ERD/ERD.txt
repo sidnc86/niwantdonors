@@ -1,0 +1,31 @@
+ERD:
+one city has many donars
+one Donar makes many Donations
+one Remark is made on many donations
+One bank processes many donations
+
+Entities identified:
+City
+-name
+Donar
+-title (Mr/Ms/Mrs)
+-name
+-address_line_1
+-city_id
+-pin_code
+-mobile
+-landline
+-pan_number
+Donation
+-receipt_number
+-receipt_date
+-amount
+-is_cach
+-cheque_number
+-cheque_date
+Bank
+-name
+-branch
+-ifsc
+Remark
+-name
